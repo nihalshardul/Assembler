@@ -1,0 +1,35 @@
+
+section .data
+
+sym#1	dd	5
+sym#2	dd	10
+sym#3	dd	10,50
+sym#4	dd	20
+sym#5	db	'Nihal'
+
+section .bss
+
+sym#6	resd	3
+sym#7	resb	1
+sym#8	resd	3
+
+section .text
+
+	global main
+
+	extern printf
+
+main:
+
+mov	reg#32	sym#1
+mov	reg#32	reg#32
+mov	reg#32	lit#1
+mov	reg#32	lit#2
+mov	reg#32	lit#1
+mov	reg#32	lit#3
+add	reg#32	mem
+mov	reg#32	sym#4
+mov	reg#32	reg#32
+mov	reg#32	reg#32
+mov	reg#32	reg#32
+mov	reg#32	mem

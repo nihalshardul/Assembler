@@ -1,0 +1,7 @@
+------------------------------------------------------Literal Table-------------------------------------------------
+
+	Line_no		Lit_no		Hex_no		Literal_Symbol		Type
+
+	18		lit#1		0xc		12			reg,img
+	19		lit#2		0xe		14			reg,img
+	21		lit#3		0xd		13			reg,img

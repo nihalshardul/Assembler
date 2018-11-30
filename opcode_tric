@@ -1,0 +1,56 @@
+For MOV =>
+
+	1-for reg_32 to reg_32 its 89__ 
+
+	2-for reg_32 to imediate
+		eax,1	its B8,hex_val_of_1 i.e. 01000000
+		ecx,1	its B9,hex_val_of_1 i.e. 01000000
+		edx,1	its BA,hex_val_of_1 i.e. 01000000
+		ebx,1	its BB,hex_val_of_1 i.e. 01000000
+		esp,1	its BC,hex_val_of_1 i.e. 01000000
+		ebp,1	its BD,hex_val_of_1 i.e. 01000000
+		esi,1	its BE,hex_val_of_1 i.e. 01000000
+		edi,1	its BF,hex_val_of_1 i.e. 01000000
+			
+		eax,a	its B8,index_val_of_1 i.e. a=1 [01000000]
+		ecx,a	its B9,index_val_of_1 i.e. a=1 [01000000]
+		edx,a	its BA,index_val_of_1 i.e. a=1 [01000000]
+		ebx,a	its BB,index_val_of_1 i.e. a=1 [01000000]
+		esp,a	its BC,index_val_of_1 i.e. a=1 [01000000]
+		ebp,a	its BD,index_val_of_1 i.e. a=1 [01000000]
+		esi,a	its BE,index_val_of_1 i.e. a=1 [01000000]
+		edi,a	its BF,index_val_of_1 i.e. a=1 [01000000]
+
+	3- for reg_32 to memory
+	
+		eax,dword[a]   	its A1,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		ecx,dword[a]   	its 8B0D,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		edx,dword[a]   	its 8B15,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		ebx,dword[a]   	its 8B1D,index_val_of_1 in reverse order i.e. a=1 [01000000]
+	
+		esp,dword[a]   	its 8B25,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		ebp,dword[a]   	its 8B2D,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		esi,dword[a]   	its 8B35,index_val_of_1 in reverse order i.e. a=1 [01000000]
+		edi,dword[a]   	its 8B3D,index_val_of_1 in reverse order i.e. a=1 [01000000]
+	
+	1-for reg_16 to reg_16 its 6689__
+		
+	2-for reg_16 to imediate
+		ax,1	its 66B8,hex_val_of_1 upto 4 digit i.e. 0100
+		cx,1	its 66B9,hex_val_of_1  upto 4 digit i.e. 0100
+		dx,1	its 66BA,hex_val_of_1  upto 4 digit i.e. 0100
+		bx,1	its 66BB,hex_val_of_1  upto 4 digit i.e. 0100
+			
+		ax,a	its 66B8,index_val_of_1  upto 4 digit i.e. a=1 [0100]
+		cx,a	its 66B9,index_val_of_1  upto 4 digit i.e. a=1 [0100]
+		dx,a	its 66BA,index_val_of_1  upto 4 digit i.e. a=1 [0100]
+		bx,a	its 66BB,index_val_of_1  upto 4 digit i.e. a=1 [0100]
+
+	3- for reg_16 to memory -- error mismatch in operator size
+
+For ADD =>
+
+	1- for reg_32 to reg_32 its 01__
+
+	-- Others are listed in opcode table
+

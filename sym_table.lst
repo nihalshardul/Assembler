@@ -1,0 +1,22 @@
+-------------------------------------------------------Symbol Table-------------------------------------------------------
+line_number		sym_no		symbol		def/undef	section		size		values   
+	2		sym#1		a		D		data		4		a dd 5
+
+	3		sym#2		b		D		data		4		b dd 10
+
+	4		sym#3		c		D		data		8		c dd 10,50
+
+	5		sym#4		d		D		data		4		d dd 20
+
+	6		sym#5		msg		D		data		5		msg db 'Nihal'
+
+	9		sym#6		s1		D		bss		4		-
+
+	10		sym#7		s2		D		bss		1		-
+
+	11		sym#8		s3		D		bss		4		-
+
+	14		sym#9		printf		U		text		-		-
+
+	15		sym#10		main		U		text		-		-
+
