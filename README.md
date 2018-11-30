@@ -17,7 +17,7 @@
  Here my code also generates new file of all Tables and Codes.
 
 # To run and Generate LST file 
-# type -> python one_pass.py
+# type -> python two_pass.py
 
  After running this code, It generates...
  
